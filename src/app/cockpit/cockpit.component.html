@@ -1,3 +1,23 @@
-<p>
-	This is cockpit html element
-</p>
+<div class="row">
+	<div class="col-sm-12">
+		<p>Add new server or blueprint</p>
+		<div class="form-group">
+			<label>Server Name: </label>
+			<!-- <input type="text" class="form-control" [(ngModel)]="newServerName" /> -->
+			<input type="text" class="form-control" #newServerNameInput />
+		</div>
+		<div class="form-group">
+			<label>Server Content: </label>
+			<!-- <input type="text" class="form-control" [(ngModel)]="newServerContent" /> -->
+			<input type="text" class="form-control" #newServerContentInput />
+		</div>
+	</div>
+	<div class="col-sm-12">
+		<button type="button" class="btn btn-primary mr-3" (click)="onAddServer(newServerNameInput, newServerContentInput)">
+      Add Server
+    </button>
+		<button type="button" class="btn btn-primary" (click)="onBlueprint(newServerNameInput, newServerContentInput)">
+      Add Blueprint
+    </button>
+	</div>
+</div>
