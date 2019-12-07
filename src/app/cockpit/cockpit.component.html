@@ -6,18 +6,18 @@
 			<!-- <input type="text" class="form-control" [(ngModel)]="newServerName" /> -->
 			<input type="text" class="form-control" #newServerNameInput />
 		</div>
-		<div class="form-group">
-			<label>Server Content: </label>
-			<!-- <input type="text" class="form-control" [(ngModel)]="newServerContent" /> -->
-			<input type="text" class="form-control" #newServerContentInput />
+			<div class="form-group">
+				<label>Server Content: </label>
+				<!-- <input type="text" class="form-control" [(ngModel)]="newServerContent" /> -->
+				<input type="text" class="form-control" #newServerContentInput />
 		</div>
-	</div>
-	<div class="col-sm-12">
-		<button type="button" class="btn btn-primary mr-3" (click)="onAddServer(newServerNameInput, newServerContentInput)">
+			</div>
+			<div class="col-sm-12">
+				<button type="button" class="btn btn-primary mr-3" (click)="onAddServer(newServerNameInput)">
       Add Server
     </button>
-		<button type="button" class="btn btn-primary" (click)="onBlueprint(newServerNameInput, newServerContentInput)">
+				<button type="button" class="btn btn-primary" (click)="onBlueprint(newServerNameInput)">
       Add Blueprint
     </button>
-	</div>
-</div>
+			</div>
+		</div>
